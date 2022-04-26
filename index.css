@@ -426,7 +426,7 @@ input {
         top: 0;
         right: 0;
         height: 100%;
-        width: 300px;
+        width: 250px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
