@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.color-o {
+    color: #CC9D65;
+}
+
+#btnAbrir, #btnCerrar {
+    display: none;
+}
+
+.border-inicio {
+    border: 3px solid rgba(255, 255, 255, 0.685);
+    margin-top: 20px;
+    box-shadow: 0 0 .2rem #2efe138e,
+                0 0 .2rem #2efe138e,
+                0 0 2rem #2efe138e,
+                0 0 0.8rem #2efe138e,
+                0 0 2.8rem #2efe138e,
+                inset 0 0 1.3rem #2efe138e;
+}
+
+.border-azul {
+    width: 30%;
+    margin: 0 auto;
+    border: 2px solid #4382E5;
+    margin-top: 20px;
+    box-shadow: 0 0 .2rem #4382E5,
+                0 0 .2rem #4382E5,
+                0 0 2rem #4382E5,
+                0 0 0.8rem #4382E5,
+                0 0 2.8rem #4382E5,
+                inset 0 0 1.3rem #4382E5;
+}
+
+.border-naranja {
+    width: 50%;
+    margin: 0 auto;
+    border: 3px solid #CC9D65;
+    margin-top: 20px;
+}
+
+.border-verde {
+    width: 60%;
+    margin: auto;
+    border: 3px solid #1eff00d3;
+    margin-top: 20px;
+    box-shadow: 0px 0px 40px #2efe138e;
+}
+
+.inicio {
+    background-image: url("img/inicio-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    align-items: flex-end;
+    padding: 0 40px;
+}
+
+.navegacion-slogan {
+    border: 2px solid 0 0 .2rem #2efe138e,
+                        0 0 .2rem #2efe138e,
+                        0 0 2rem #2efe138e,
+                        0 0 0.8rem #2efe138e,
+                        0 0 2.8rem #2efe138e,
+                        inset 0 0 1.3rem #2efe138e;
+    
+    padding: 10px;
+    color: #fff;
+    box-shadow: 0 0 .2rem #2efe13,
+                0 0 .2rem #2efe13,
+                0 0 1rem #2efe13,
+                0 0 .9rem #2efe13,
+                0 0 .9rem #2efe13,
+                inset 0 0 .9rem #2efe13; 
+    background-color: #1aff0054;
+}
+
+.navegacion-enlaces {
+    padding: 10px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.navegacion-enlaces a {
+    color: #fff;
+    background: #2c68cf73;
+    width: 20%;
+    padding: 10px 0;
+    box-shadow: 0 0 .2rem #0e58d673,
+                0 0 .2rem #0e58d673,
+                0 0 1rem #0e58d673,
+                0 0 .9rem #0e58d673,
+                0 0 .9rem #0e58d673,
+                inset 0 0 .9rem #0e58d673; 
+    text-align: center;
+}
+
+.inicio-textos {
+    width: 50%;
+    margin: 200px auto 0;
+    text-align: center;
+    color: #fff;
+}
+
+.inicio-textos h1 {
+    font-size: 4rem;
+}
+
+.inicio-textos p {
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+
+.inicio-textos a {
+    color: #fff;
+    display: inline-block;
+    margin-top: 50px;
+    border: 1px solid rgb(90, 90, 90);
+    padding: 10px;
+    width: 50%;
+    border-radius: 50px;
+}
+
+.inicio-textos a:hover {
+    background-color: #4382E5;
+}
+
+.navegacion i {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.capacitacion {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.capacitacion-titulo {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.capacitacion-titulo h1 {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.capacitacion-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.capacitacion-item {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.capacitacion-item h1 {
+    margin: 20px 0;
+}
+
+.capacitacion-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.color-gray {
+    background-color: #161A1E;
+}
+
+.precios {
+    background-color: #000;
+    /* Colapso de margenes */
+    padding: .1px;
+}
+
+.precios h1 {
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.precios-contenedor {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-image: url("img/precios-img.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.precios-item{
+    padding: 20px;
+}
+
+.precios-item h1 {
+    margin-top: 70px;
+}
+
+.precios-item p {
+    margin: 15px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.precios-item a {
+    display: inline-block;
+    background-color: #4280E2;
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
+    box-shadow: 0 0 .2rem #0e57d648,
+                0 0 .2rem #0e57d63d,
+                0 0 1rem #0e57d634,
+                0 0 .9rem #0e57d648,
+                0 0 .9rem #0e57d631,
+                inset 0 0 .9rem #0e57d642; 
+}
+
+.precios-shadow {
+    height: 5px;
+    margin: 100px 0 0;
+    box-shadow: 0 0 .2rem #0e57d648,
+                0 0 .2rem #0e57d63d,
+                0 0 1rem #0e57d634,
+                0 0 .9rem #0e57d648,
+                0 0 .9rem #0e57d631,
+                inset 0 0 .9rem #0e57d642; 
+}
+
+.quienes-somos {
+    background-color: #fff;
+}
+
+.quienes-somos-textos {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    color: #434343;
+}
+
+.quienes-somos-textos h1 {
+    font-size: 2.4rem;
+}
+
+.quienes-somos-textos p {
+    font-size: 1.3rem;
+    margin: 30px 0;
+    font-weight: 500;
+}
+
+.quienes-somos-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 50px;
+    gap: 20px;
+}
+
+.quienes-somos-proyecto {
+    font-size: 13px;
+    display: flex;
+    gap: 20px;
+}
+
+.quienes-somos-proyecto h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.quienes-somos-proyecto img {
+    height: 60px;
+    width: 60px;
+}
+
+.footer {
+    background-color: red;
+    padding: 50px;
+    background-image: url("img/footer-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.footer-textos {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-textos p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.input-grup {
+    margin-top: 20px;
+}
+
+.input-grup p {
+    font-size: 15px;
+}
+
+.footer-form {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.footer-form button {
+    width: 120px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 20px;
+    float: right;
+    color: gray;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.footer-form button:hover {
+    background-color: #524645;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    background-color: #524645;
+    border-top: 2px solid #978e8c;
+    border-left: 1px solid rgb(177, 177, 177);
+    border-right: 1px solid rgb(177, 177, 177);
+    border-bottom: 2px solid #978e8c;
+    border-radius: 5px;
+}
+
+.footer-redes {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.footer-redes h1 {
+    font-size: 1.5rem;
+    margin: 20px 0 0;
+}
+
+.iconos-redes img{
+    width: 40px;
+    height: 40px;
+    margin: 20px 10px;
+}
+
+@media (max-width: 710px){
+    .navegacion-enlaces {
+        width: 90%;
+    }
+
+    .quienes-somos-textos {
+        width: 100%;
+    }
+
+    .quienes-somos-textos h1 {
+        font-size: 2rem;
+    }
+
+    .quienes-somos-textos p {
+        font-size: 1rem;
+    }
+
+    .precios-contenedor {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    #btnAbrir, #btnCerrar {
+        display: block;
+    }
+
+    .inicio-textos h1 {
+        font-size: 3rem;
+    }
+
+    .navegacion-enlaces {
+        background-color: #000;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 300px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 20px;
+        transform: translateX(100%);
+        transition: transform .5s;
+    }
+
+    .navegacion-enlaces a{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .inicio {
+        background-image: url("img/inicio-img-responsive.webp");
+    }
+
+    .inicio-textos {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .inicio-textos p {
+        font-size: 15px;
+    }
+
+    .quienes-somos-proyecto {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center
+    }
+}
